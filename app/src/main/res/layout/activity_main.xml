@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter city name"
+        android:layout_margin="16dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonFetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetch Weather"
+        android:layout_below="@id/editTextCity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextViews to display weather information -->
+    <TextView
+        android:id="@+id/textViewCurrentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Temperature"
+        android:layout_below="@id/buttonFetch"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewMaxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Temperature"
+        android:layout_below="@id/textViewCurrentTemp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewMinTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min Temperature"
+        android:layout_below="@id/textViewMaxTemp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        android:layout_below="@id/textViewMinTemp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewSkyCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sky Condition"
+        android:layout_below="@id/textViewHumidity"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
